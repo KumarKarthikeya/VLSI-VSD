@@ -16,7 +16,7 @@ Ubuntu, Oracle Virtual Machine and packages needed are Yosys,gtkwave,iverilog,Op
 <details>
   <summary> Yosys </summary>
   <br>
-![Screenshot from 2024-02-18 18-27-21](/home/kumar123/Pictures/Screenshot from 2024-02-18 18-27-21.png)
+![Yosys](gtkwave.png)
   
 </details>
 
