@@ -42,4 +42,11 @@ Ubuntu, Oracle Virtual Machine and packages needed are Yosys,gtkwave,iverilog,Op
 
 </details>
 
+<details>
+  <summary> BLOCK DIAGRAM for Car parking system </summary>
 
+ car parking system
+  <br>
+  ![automatic-car-parking-system](https://github.com/KumarKarthikeya/VLSI-VSD/assets/72381320/16d5198d-e5fd-4424-b650-ca9875d85ff3)
+
+</details>
