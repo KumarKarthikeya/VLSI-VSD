@@ -51,3 +51,20 @@ Ubuntu, Oracle Virtual Machine and packages needed are Yosys,gtkwave,iverilog,Op
 
 
 </details>
+
+<details>
+  <summary> TASK 3: Installion of RTL and Test bench files and chexk the basic functional simulation. </summary>
+
+  SKY 130
+  <br>
+  ![Screenshot from 2024-02-25 10-29-05](https://github.com/KumarKarthikeya/VLSI-VSD/assets/72381320/5cabf6a2-8980-4827-a887-2a74ef5a5fe2)
+
+  RTL and TB files
+  <br>
+  ![Screenshot from 2024-02-25 10-29-18](https://github.com/KumarKarthikeya/VLSI-VSD/assets/72381320/67aef5b1-2dcc-4434-8f46-4ee820823777)
+
+  Basis of functional simulation
+  <br>
+  ![Screenshot from 2024-02-25 13-36-48](https://github.com/KumarKarthikeya/VLSI-VSD/assets/72381320/7d5ead33-1c86-4262-b9d3-6f503af320e0)
+
+</details>
