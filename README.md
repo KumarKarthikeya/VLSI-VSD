@@ -68,3 +68,66 @@ Ubuntu, Oracle Virtual Machine and packages needed are Yosys,gtkwave,iverilog,Op
   ![Screenshot from 2024-02-25 13-36-48](https://github.com/KumarKarthikeya/VLSI-VSD/assets/72381320/7d5ead33-1c86-4262-b9d3-6f503af320e0)
 
 </details>
+
+<details>
+  <summary> TASK 4:Read the example verilog file,synthesis and write the netlist.  </summary>
+
+  Invoking yosys inside verilog_code file:
+  
+  <code>yosys</code>
+  <br>
+  ![yosys](https://github.com/KumarKarthikeya/VLSI-VSD/assets/72381320/7b476ff5-d367-4f64-82ba-88b6776e3079)
+
+  Reading the Library:
+
+  <code>read_liberty -lib /home/kumar123/sky130RTLDesignAndSynthesisWorkshop/lib/sky130_fd_sc_hd__tt_025C_1v80.lib</code>
+  <br>
+  ![read lib](https://github.com/KumarKarthikeya/VLSI-VSD/assets/72381320/06e8f261-67e4-4b90-a452-2cb12e2f8b44)
+
+  Reading the Design:
+
+  <code>read_verilog good_mux.v</code>
+  <br>
+  ![read verilog](https://github.com/KumarKarthikeya/VLSI-VSD/assets/72381320/30c76fdf-fdf5-4096-a4bd-e119ddaf82bd)
+
+  Specifying the module that we are synthesizing:
+
+  <code>synth -top good_mux</code>
+  <br>
+  ![synth](https://github.com/KumarKarthikeya/VLSI-VSD/assets/72381320/401752ce-8d5b-451f-b50b-346be328f5b4)
+
+  To generate the netlist use abc liberty:
+
+  <code>abc -liberty /home/kumar123/sky130RTLDesignAndSynthesisWorkshop/lib/sky130_fd_sc_hd__tt_025C_1v80.lib</code>
+  <br>
+  ![abc liberty](https://github.com/KumarKarthikeya/VLSI-VSD/assets/72381320/fc9fc79c-ac05-445e-ab89-547127a90ca5)
+
+  To see the graphical version of the logic:
+
+  <code>show</code>
+  <br>
+  ![show](https://github.com/KumarKarthikeya/VLSI-VSD/assets/72381320/17c7dc2d-cbc5-4b25-9182-7087d1d2f0f4)
+
+  To write the netlist:
+
+  <code>write_verilog good_mux_netlist.v</code>
+  <br>
+  ![write verilog](https://github.com/KumarKarthikeya/VLSI-VSD/assets/72381320/e2818095-8900-40ce-9e8c-758b6823e665)
+
+  Using the switch '-noattr' to get the simplified version of netlist file:
+
+  <code>write_verilog -noattr good_mux_netlist.v</code>
+  <br>
+  ![write verilog noattr](https://github.com/KumarKarthikeya/VLSI-VSD/assets/72381320/98236726-aeff-4243-a6bb-52a899ffdf0b)
+
+  To open the netlist:
+
+  <code>!gvim good_mux_netlist.v</code>
+  <br>
+  ![gvim](https://github.com/KumarKarthikeya/VLSI-VSD/assets/72381320/99c3eafe-2147-4070-8959-147d75b22bf4)
+
+  ![gvim code](https://github.com/KumarKarthikeya/VLSI-VSD/assets/72381320/36b34545-5ce3-4788-831a-f8450153fd68)
+
+
+</details>
+
