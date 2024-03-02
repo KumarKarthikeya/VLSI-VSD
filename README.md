@@ -131,3 +131,19 @@ Ubuntu, Oracle Virtual Machine and packages needed are Yosys,gtkwave,iverilog,Op
 
 </details>
 
+<details>
+  <summary> TASK 5: Read the project files and write the netlist and verify the wave forms. </summary>
+
+  Extract the git code file to car parking system project
+  <code> git clone https://github.com/ishan-desai64/iiitb_cps.git</code>
+  <br>
+  ![synth real](https://github.com/KumarKarthikeya/VLSI-VSD/assets/72381320/58e287d6-4019-4232-89d9-fcbc9a869ac3)
+![abc lib real](https://github.com/KumarKarthikeya/VLSI-VSD/assets/72381320/5d9f74ce-e045-47b8-9d48-5f4b7346101d)
+![representation oif cells](https://github.com/KumarKarthikeya/VLSI-VSD/assets/72381320/615372dc-ed19-4fb6-8478-1d1fae314959)
+![gtk wave](https://github.com/KumarKarthikeya/VLSI-VSD/assets/72381320/69b08d2d-42a4-456b-957d-25de19db353d)
+![git cline](https://github.com/KumarKarthikeya/VLSI-VSD/assets/72381320/35035520-064c-4966-bd4f-eab5c747d5fd)
+![yosys real](https://github.com/KumarKarthikeya/VLSI-VSD/assets/72381320/4eb0464f-2fd0-41e4-bff8-10acecfa6637)
+![read lib real](https://github.com/KumarKarthikeya/VLSI-VSD/assets/72381320/5c39e1bb-cf0a-4272-bad5-6b9a23b67624)
+![read verilog real](https://github.com/KumarKarthikeya/VLSI-VSD/assets/72381320/ff09160b-11b2-496d-acd5-4dab3cc79ea9)
+
+</details>
