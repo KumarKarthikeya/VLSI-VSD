@@ -134,16 +134,50 @@ Ubuntu, Oracle Virtual Machine and packages needed are Yosys,gtkwave,iverilog,Op
 <details>
   <summary> TASK 5: Read the project files and write the netlist and verify the wave forms. </summary>
 
-  Extract the git code file to car parking system project
+   To Generate the netlist extract the git code file of car parking system project
+   
   <code> git clone https://github.com/ishan-desai64/iiitb_cps.git</code>
   <br>
-  ![synth real](https://github.com/KumarKarthikeya/VLSI-VSD/assets/72381320/58e287d6-4019-4232-89d9-fcbc9a869ac3)
-![abc lib real](https://github.com/KumarKarthikeya/VLSI-VSD/assets/72381320/5d9f74ce-e045-47b8-9d48-5f4b7346101d)
-![representation oif cells](https://github.com/KumarKarthikeya/VLSI-VSD/assets/72381320/615372dc-ed19-4fb6-8478-1d1fae314959)
-![gtk wave](https://github.com/KumarKarthikeya/VLSI-VSD/assets/72381320/69b08d2d-42a4-456b-957d-25de19db353d)
-![git cline](https://github.com/KumarKarthikeya/VLSI-VSD/assets/72381320/35035520-064c-4966-bd4f-eab5c747d5fd)
-![yosys real](https://github.com/KumarKarthikeya/VLSI-VSD/assets/72381320/4eb0464f-2fd0-41e4-bff8-10acecfa6637)
-![read lib real](https://github.com/KumarKarthikeya/VLSI-VSD/assets/72381320/5c39e1bb-cf0a-4272-bad5-6b9a23b67624)
-![read verilog real](https://github.com/KumarKarthikeya/VLSI-VSD/assets/72381320/ff09160b-11b2-496d-acd5-4dab3cc79ea9)
+  ![git cline](https://github.com/KumarKarthikeya/VLSI-VSD/assets/72381320/ce399d34-1943-420e-8b48-fcc6641e7dd0)
+
+  Invoking yosys inside iiitb_cps file
+  
+<code>yosys</code>
+<br>
+![yosys real](https://github.com/KumarKarthikeya/VLSI-VSD/assets/72381320/9bde156a-1558-462d-879d-6e667e4c7501)
+
+Reading the Library:
+
+<code>read_liberty -lib /home/kumar123/iiitb_cps/lib/sky130_fd_sc_hd_tt_025C_ 1v80.lib</code>
+<br>
+![read lib real](https://github.com/KumarKarthikeya/VLSI-VSD/assets/72381320/40674605-992c-4594-b2be-9dd34df64d05)
+
+Read verilog file:
+
+<code>read_verilog iiitb_cps.v</code>
+<br>
+![read verilog real](https://github.com/KumarKarthikeya/VLSI-VSD/assets/72381320/7e51a141-cdd4-416f-812a-be4e05654e6c)
+
+Synthesizing the project module:
+
+<code>synth -top iiitb_cps</code>
+<br>
+![synth real](https://github.com/KumarKarthikeya/VLSI-VSD/assets/72381320/e3309e3a-f420-4b71-b0a3-507c51eaa55b)
+
+Generate the netlist:
+
+<code>abc -liberty /home/kumar123/iiitb_cps/lib/sky130_fd_sc_hd_tt_025C_1v80.lib</code>
+<br>
+![abc lib real](https://github.com/KumarKarthikeya/VLSI-VSD/assets/72381320/928219a8-95e1-4902-a113-99d4f422f6ad)
+
+To write the netlist:
+
+<code>write_verilog netlist.v</code>
+
+Using the switch '-noattr' to get the simplified version of netlist file:
+
+<code>write_verilog -noattr netlist.v</code>
+
+
 
 </details>
