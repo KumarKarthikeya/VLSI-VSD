@@ -134,6 +134,15 @@ Ubuntu, Oracle Virtual Machine and packages needed are Yosys,gtkwave,iverilog,Op
 <details>
   <summary> TASK 5: Read the project files and write the netlist and verify the wave forms. </summary>
 
+
+Check the Gtkwave for the design
+
+<code> iverilog iiitb_cps.v</code>
+<code>./a.out</code>
+<code>gtkwave iiitb_cps.vcd</code>
+<br>
+![gtkwave](https://github.com/KumarKarthikeya/VLSI-VSD/assets/72381320/91c7e561-947e-48f9-9c77-6e9d60f8e50a)
+
    To Generate the netlist extract the git code file of car parking system project
    
   <code> git clone https://github.com/ishan-desai64/iiitb_cps.git</code>
@@ -177,6 +186,27 @@ To write the netlist:
 Using the switch '-noattr' to get the simplified version of netlist file:
 
 <code>write_verilog -noattr netlist.v</code>
+
+To see graphical representation of the logic:
+<code>show</code>
+![show dot](https://github.com/KumarKarthikeya/VLSI-VSD/assets/72381320/ff7e6747-76f4-4ba3-8e59-d6a60df887c0)
+
+To open the netlist:
+<code>!gvim netlist.v</code>
+
+Here is the clear view of circuit:
+
+[output.pdf](https://github.com/KumarKarthikeya/VLSI-VSD/files/14545854/output.pdf)
+
+Check the whether the netlist will match the design:
+<code>iverilog ../iiitb_cps/verilog_model/primitives.v ../iiitb_cps/verilog_model/sky130_fd_sc_hd.v netlist.v iiitb_cps.v</code>
+
+<code> ./a.out</code>
+
+<code> gtkwave iiitb_cps.vcd</code>
+
+Gtkwave of the netlist:
+![gtk2](https://github.com/KumarKarthikeya/VLSI-VSD/assets/72381320/e3e5a93c-c1d4-4b1f-847e-4a6a68a79baa)
 
 
 
