@@ -1,4 +1,4 @@
-# 4 Week Mini  research internship of VLSI using VSDSquadron Mini RISC-V Development kit
+[24_VSDSQMini 4 Week Online Internship certificate 2024VSDSQMini 4 Week Internship certificate.pdf](https://github.com/KumarKarthikeya/VLSI-VSD/files/14692978/24_VSDSQMini.4.Week.Online.Internship.certificate.2024VSDSQMini.4.Week.Internship.certificate.pdf)# 4 Week Mini  research internship of VLSI using VSDSquadron Mini RISC-V Development kit
 This repositiry is intended to document the learning outcomes and experience of a 4-week workshop on VLSI and RISC-V using VSDSquadron Mini RISC-V Development kit.
 
 <details>
@@ -209,5 +209,14 @@ Gtkwave of the netlist:
 ![gtk2](https://github.com/KumarKarthikeya/VLSI-VSD/assets/72381320/e3e5a93c-c1d4-4b1f-847e-4a6a68a79baa)
 
 
+
+</details>
+
+<details>
+ <summary> Certificate of Internship Completion </summary>
+  
+  <br>
+
+[VSD Internship certificate.pdf](https://github.com/KumarKarthikeya/VLSI-VSD/files/14692988/VSD.Internship.certificate.pdf)
 
 </details>
